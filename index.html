@@ -428,6 +428,12 @@
   .geo-divider.on-dark .ln{background:rgba(255,255,255,0.2);}
   .geo-divider.on-dark .sq{border-color:var(--sage-light);}
 
+  .calendly-widget-wrap{
+    background:var(--gray);
+    border-radius:2px;
+    overflow:hidden;
+  }
+
   footer{
     background:var(--black);
     color:rgba(255,255,255,0.4);
@@ -435,6 +441,22 @@
     padding:26px 24px;
     font-size:12px;
   }
+  .footer-links{
+    margin-bottom:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .footer-links a{
+    color:var(--sage-light);
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:0.02em;
+  }
+  .footer-links a:hover{color:var(--white);}
+  .footer-sep{color:rgba(255,255,255,0.25);}
 
   /* Sticky mobile CTA */
   .sticky-cta{
@@ -548,12 +570,12 @@
           <div class="plan-body">
             <div class="plan-eyebrow">Pack Standard</div>
             <h3>Empezá a mostrarte</h3>
-            <div class="desc">Para dar el primer paso y tener contenido profesional sin complicarte con la producción.</div>
-            <div class="price">$115.000 <small>/ mes</small></div>
+            <div class="desc">Para dar el primer paso y tener contenido profesional de manera rapida.</div>
+            <div class="price">$115.000</div>
             <ul>
               <li><span class="chk">✓</span> 1 video editado</li>
               <li><span class="chk">✓</span> 5 fotos HDR</li>
-              <li><span class="chk">✓</span> Dron</li>
+              <li><span class="chk">✓</span> Tomas con dron</li>
               <li><span class="chk">✓</span> 1 revisión</li>
             </ul>
           </div>
@@ -576,12 +598,12 @@
             <div class="plan-eyebrow">Pack Pro</div>
             <h3>Contenido con estrategia</h3>
             <div class="desc">El equilibrio entre volumen y calidad para posicionarte como referente del rubro, no solo estar presente.</div>
-            <div class="price">$500.000 <small>/ mes</small></div>
+            <div class="price">$500.000</div>
             <ul>
               <li><span class="chk">✓</span> 5 videos editados</li>
               <li><span class="chk">✓</span> 25 fotos HDR</li>
+              <li><span class="chk">✓</span> Tomas con dron</li>
               <li><span class="chk">✓</span> 2 hs de grabación para contenido hablando a cámara <strong>(bonificado)</strong></li>
-              <li><span class="chk">✓</span> Dron</li>
               <li><span class="chk">✓</span> 1 revisión por video</li>
             </ul>
           </div>
@@ -602,12 +624,12 @@
             <div class="plan-eyebrow">Pack Premium</div>
             <h3>Producción cinemática</h3>
             <div class="desc">Para estudios, desarrollos o alojamientos que necesitan piezas de alta gama y volumen constante.</div>
-            <div class="price">$900.000 <small>/ mes</small></div>
+            <div class="price">$900.000</div>
             <ul>
               <li><span class="chk">✓</span> 10 videos editados</li>
               <li><span class="chk">✓</span> 50 fotos HDR</li>
+              <li><span class="chk">✓</span> Tomas con dron</li>
               <li><span class="chk">✓</span> 4 hs de grabación <strong>bonificadas</strong></li>
-              <li><span class="chk">✓</span> Dron</li>
               <li><span class="chk">✓</span> 1 revisión por video</li>
             </ul>
           </div>
@@ -629,17 +651,21 @@
       <h2>Agendá una llamada y mirá cómo quedaría tu contenido</h2>
       <p>15 minutos para entender tu negocio y mostrarte, con ejemplos reales del rubro, qué pack tiene más sentido para vos.</p>
       <div class="calendly-frame">
-        <div class="calendly-inner">
-          <div class="cal-icon">15'</div>
-          <div class="cap">Espacio reservado para tu Calendly</div>
+        <div class="calendly-widget-wrap">
+          <div class="calendly-inline-widget" data-url="https://calendly.com/maxicarrizo232/vsl" style="min-width:320px; height:640px;"></div>
+          <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </div>
       </div>
-      <div class="calendly-note">↳ Reemplazá este bloque por el widget embebido de Calendly (o el link directo en el botón)</div>
     </div>
   </section>
 
   <footer>
-    © 2026 NOVAVISUALS — Contenido audiovisual para inmobiliarias, arquitectos y alojamientos. · <a href="https://calendly.com/maxicarrizo232/vsl" target="_blank" rel="noopener noreferrer">Agendar una llamada</a>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/p/DdFK1RTDxbM/" target="_blank" rel="noopener">Conoce mi equipo</a>
+      <span class="footer-sep">·</span>
+      <a href="https://www.maxinovavisuals.com/" target="_blank" rel="noopener">Sobre mí</a>
+    </div>
+    © 2026 NOVAVISUALS — Contenido audiovisual para inmobiliarias, arquitectos y alojamientos.
   </footer>
 
   <!-- CTA fijo para mobile -->
@@ -651,4 +677,3 @@
 
 </body>
 </html>
-
