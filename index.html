@@ -107,13 +107,27 @@
   .video-inner{position:relative; width:100%; padding-top:56.25%; background:linear-gradient(135deg, var(--navy-2), var(--navy)); border-radius:2px; overflow:hidden;}
 
   /* ===== CONOCE MI EQUIPO ===== */
-  .team{background:var(--gray); padding:0 0 90px; text-align:center; position:relative;}
-  .team-head{max-width:480px; margin:0 auto 28px;}
-  .team-head .eyebrow{color:var(--sage); margin-bottom:10px; display:block;}
-  .team-head h3{font-size:clamp(19px,2.2vw,23px); color:var(--navy); font-weight:600;}
-  .team-frame{max-width:360px; margin:0 auto; background:var(--navy); border-radius:4px; padding:8px; box-shadow:var(--shadow);}
-  .team-frame-inner{background:var(--white); border-radius:2px; overflow:hidden; min-height:200px; display:flex; align-items:center; justify-content:center;}
+  .team{background:var(--gray); padding:0 0 90px; position:relative;}
+  .team-card{
+    max-width:1000px; margin:0 auto; background:var(--navy); border-radius:6px; overflow:hidden;
+    box-shadow:var(--shadow); display:grid; grid-template-columns:1fr 0.85fr; align-items:stretch;
+  }
+  .team-copy{padding:46px 42px; color:var(--white); display:flex; flex-direction:column; justify-content:center;}
+  .team-copy .eyebrow{color:var(--sage-light); margin-bottom:14px; display:block;}
+  .team-copy h3{font-size:clamp(22px,2.6vw,28px); margin-bottom:14px; font-weight:700;}
+  .team-copy p{font-size:14.5px; line-height:1.65; color:rgba(255,255,255,0.72); font-weight:400;}
+  .team-frame{
+    background:var(--white);
+    display:flex; align-items:center; justify-content:center;
+    padding:18px;
+    min-height:280px;
+  }
+  .team-frame-inner{width:100%; border-radius:2px; overflow:hidden; min-height:200px; display:flex; align-items:center; justify-content:center;}
   .team-frame-inner iframe{width:100%; border:none; display:block;}
+  @media (max-width: 760px){
+    .team-card{grid-template-columns:1fr;}
+    .team-frame{min-height:220px;}
+  }
 
   /* ===== PACKS ===== */
   .pricing{background:var(--white); padding:96px 0 100px;}
@@ -277,16 +291,19 @@
     </div>
   </section>
 
-  <!-- ===== CONOCE MI EQUIPO ===== -->
+  <!-- ===== QUÉ USO PARA GRABAR ===== -->
   <section class="team" id="equipo">
     <div class="wrap">
-      <div class="team-head">
-        <span class="eyebrow">QUÉ USO PARA GRABAR</span>
-        <h3>Conocé mi equipo de grabación</h3>
-      </div>
-      <div class="team-frame">
-        <div class="team-frame-inner">
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DdFK1RTDxbM/" data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
+      <div class="team-card">
+        <div class="team-copy">
+          <span class="eyebrow">Detrás de escena</span>
+          <h3>Qué uso para grabar</h3>
+          <p>Cámaras, dron, estabilizadores y audio profesional: el equipo con el que llego a cada propiedad para que el resultado se vea (y se escuche) a la altura del lugar.</p>
+        </div>
+        <div class="team-frame">
+          <div class="team-frame-inner">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DdFK1RTDxbM/" data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
+          </div>
         </div>
       </div>
     </div>
