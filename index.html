@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TU_ID_AQUI');</script>
+<!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NOVAVISUALS — Contenido que convierte propiedades en clientes</title>
@@ -224,27 +231,13 @@
     body{padding-bottom:76px;}
     .hero-top{margin-bottom:48px;}
   }
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '936224029081700');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=936224029081700&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TU_ID_AQUI"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
   <div class="letterbox-top"></div>
 
@@ -303,31 +296,11 @@ src="https://www.facebook.com/tr?id=936224029081700&ev=PageView&noscript=1"
       </div>
       <div class="video-frame">
         <div class="video-inner">
-          <iframe id="vsl-video" src="https://www.youtube.com/embed/LgLAGiE8pio?enablejsapi=1" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/LgLAGiE8pio" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Tracking de reproducción del video (VSL) -->
-  <script>
-    var novavisualsVideoPlayed = false;
-    function onYouTubeIframeAPIReady() {
-      new YT.Player('vsl-video', {
-        events: {
-          'onStateChange': function(event) {
-            if (event.data === YT.PlayerState.PLAYING && !novavisualsVideoPlayed) {
-              novavisualsVideoPlayed = true;
-              if (typeof fbq === 'function') {
-                fbq('trackCustom', 'VideoPlay', {video_name: 'VSL'});
-              }
-            }
-          }
-        }
-      });
-    }
-  </script>
-  <script src="https://www.youtube.com/iframe_api" async></script>
 
   <!-- ===== QUÉ USO PARA GRABAR ===== -->
   <section class="team" id="equipo">
@@ -385,7 +358,7 @@ src="https://www.facebook.com/tr?id=936224029081700&ev=PageView&noscript=1"
               <li><span class="chk">✓</span> 1 revisión</li>
             </ul>
           </div>
-          <a href="#agenda" class="cta-btn" onclick="if(typeof fbq==='function'){fbq('trackCustom','PackClick',{pack:'Standard'});}">Agendár Standard</a>
+          <a href="#agenda" class="cta-btn">Agendár Standard</a>
         </div>
 
         <!-- PACK 2 - FEATURED -->
@@ -413,7 +386,7 @@ src="https://www.facebook.com/tr?id=936224029081700&ev=PageView&noscript=1"
               <li><span class="chk">✓</span> 1 revisión por video</li>
             </ul>
           </div>
-          <a href="#agenda" class="cta-btn" onclick="if(typeof fbq==='function'){fbq('trackCustom','PackClick',{pack:'Pro'});}">Agendár Pro</a>
+          <a href="#agenda" class="cta-btn">Agendár Pro</a>
         </div>
 
         <!-- PACK 3 -->
@@ -439,7 +412,7 @@ src="https://www.facebook.com/tr?id=936224029081700&ev=PageView&noscript=1"
               <li><span class="chk">✓</span> 1 revisión por video</li>
             </ul>
           </div>
-          <a href="#agenda" class="cta-btn" onclick="if(typeof fbq==='function'){fbq('trackCustom','PackClick',{pack:'Premium'});}">Agendár Premium</a>
+          <a href="#agenda" class="cta-btn">Agendár Premium</a>
         </div>
       </div>
     </div>
@@ -485,19 +458,6 @@ src="https://www.facebook.com/tr?id=936224029081700&ev=PageView&noscript=1"
           <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </div>
       </div>
-
-      <!-- Evento de conversión: se dispara cuando Calendly confirma que se agendó la llamada -->
-      <script>
-        window.addEventListener('message', function(e) {
-          if (e.data && e.data.event && e.data.event.indexOf('calendly') === 0) {
-            if (e.data.event === 'calendly.event_scheduled') {
-              if (typeof fbq === 'function') {
-                fbq('track', 'Schedule');
-              }
-            }
-          }
-        });
-      </script>
     </div>
   </section>
 
@@ -507,7 +467,7 @@ src="https://www.facebook.com/tr?id=936224029081700&ev=PageView&noscript=1"
 
   <!-- CTA fijo para mobile -->
   <div class="sticky-cta">
-    <a href="#agenda" class="cta-btn" onclick="if(typeof fbq==='function'){fbq('trackCustom','StickyCTAClick');}">Agendar llamada →</a>
+    <a href="#agenda" class="cta-btn">Agendar llamada →</a>
   </div>
 
   <div class="letterbox-bottom"></div>
